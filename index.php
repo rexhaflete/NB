@@ -191,7 +191,7 @@ footer {
         clearConfirm: "Clear all notes? This cannot be undone."
       },
       sq: {
-        title: "📓 Fleta Ime",
+        title: "📓 Fletorja Ime",
         subtitle: "Ruajtje automatike • Kontroll i shkrimit • EU friendly",
         placeholder: "Shkruaj shënimet këtu...",
         statusSaved: "Ruhet lokalisht në shfletuesin tënd (localStorage).",
