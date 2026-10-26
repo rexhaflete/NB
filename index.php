@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A simple, EU friendly notebook app that stores your notes locally in your browser. No data is sent to any server." />
+  <meta name="keywords" content="notebook,notes,localStorage,EU friendly,privacy,cookies" />
+  <meta name="author" content="Your Name" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5AQDCTkK6u0sNAAAAoZJREFUOMuNkk1rE1EQx38zv3n3n3n3m3bZt2rRp0qSJEkKIoKIgqChQqKCiKCiKCiKCiKCiKCiKCiKCiKCiKCiKCiKCiKCgqEoUQkSRJp06Z
+  Nzpw5syZkzZs3bty4cOXLkyJEmTJk2bNmyZMmTJk2bNmyZMmTJk2bNmyZMmTJk2bNmyZMmTJk2bNmyZMmTJk2" />
   <title>Notebook — EU friendly</title>
   <style>
     :root{
@@ -14,14 +19,14 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-  background: #FFC7E6;       /* soft pink background */
-  color: #660033;            /* dark pink text for readability */
+  background: #c7f6ff;       /* soft pink background */
+  color: #005566;            /* dark pink text for readability */
 }
 
 .container {
   width: 100%;
   max-width: var(--max-width);
-  background: #FFC7F4;       /* lighter pink container */
+  background: #c7f9ff;       /* lighter pink container */
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(10, 20, 40, 0.06);
   padding: 18px;
@@ -38,7 +43,7 @@ header {
 h1 {
   font-size: 20px;
   margin: 0;
-  color: #99004d;            /* dark pink heading */
+  color: #002b99;            /* dark pink heading */
 }
 
 .controls {
@@ -56,26 +61,26 @@ textarea {
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.4;
-  border: 1px solid #FF5CE9;  /* bright pink border */
+  border: 1px solid #5c8dff;  /* bright pink border */
   border-radius: 8px;
   resize: vertical;
   transition: font-size 0.12s;
-  background: #FFF0F6;         /* very light pink background */
-  color: #660033;              /* dark pink text */
+  background: #f0fbff;         /* very light pink background */
+  color: #00665e;              /* dark pink text */
 }
 
 .btn {
   padding: 8px 12px;
   border-radius: 8px;
-  border: 1px solid #FF5CE9;   /* pink border */
-  background: #FFC7F4;          /* light pink button */
+  border: 1px solid #5cdeff;   /* pink border */
+  background: #c7f8ff;          /* light pink button */
   cursor: pointer;
-  color: #660033;               /* dark pink text on buttons */
+  color: #005366;               /* dark pink text on buttons */
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background: #FF5CE9;          /* brighter pink on hover */
+  background: #5cf1ff;          /* brighter pink on hover */
   color: white;
 }
 
@@ -91,7 +96,7 @@ footer {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  color: #660033;
+  color: #005366;
   font-size: 13px;
 }
 
@@ -102,7 +107,7 @@ footer {
   bottom: 12px;
   max-width: var(--max-width);
   margin: 0 auto;
-  background: #fff0f6;           /* very light pink */
+  background: #f0fcff;           /* very light pink */
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(12, 20, 40, 0.12);
   padding: 12px;
@@ -110,7 +115,7 @@ footer {
   gap: 12px;
   align-items: center;
   justify-content: space-between;
-  color: #660033;
+  color: #005366;
 }
 
 .hidden {
@@ -121,13 +126,13 @@ footer {
   border: 0;
   background: transparent;
   cursor: pointer;
-  color: #ff33aa;              /* bright pink link */
+  color: #33ebff;              /* bright pink link */
   text-decoration: underline;
 }
 
 .meta {
   font-size: 13px;
-  color: #660033;
+  color: #005766;
 }
 </style>
 </head>
@@ -172,7 +177,7 @@ footer {
       <button class="btn" id="gdpr-decline">Decline</button>
     </div>
   </div>
-
+<script src="js/main.js"></script>
   <script>
     // -----------------------
     // Configuration & i18n
